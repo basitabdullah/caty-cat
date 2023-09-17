@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { BsCart } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { IoNotificationsOutline } from "react-icons/io5";
@@ -16,17 +16,21 @@ const Header = () => {
       <div className="header">
         <div>
           <img src={logo} alt="111" />
+          <h2>edarville.com</h2>
         </div>
 
-        <h2>cedarville.com</h2>
         <div className="inputdiv">
-          <input type="text" placeholder="search.."></input>
-          <button type="submit">
-            <CiSearch />
-          </button>
+          <CiSearch fontSize={"1.5rem"} />
+          <input type="text" placeholder="search..." />
         </div>
-          <BsCart />
-          <IoNotificationsOutline/>
+
+       <div className="icons">
+       <Link to={"/cart"}><BsCart fontSize={"1.5rem"} /></Link>
+        <Link to={"/notifications"}><IoNotificationsOutline fontSize={"1.5rem"} /></Link>
+       </div>
+
+        
+    
       </div>
     </>
   );

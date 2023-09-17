@@ -1,0 +1,27 @@
+@import "static";
+
+.homeComp{
+    display: flex;
+    padding: 5rem;
+    >h1{
+        flex: 1;
+        font: 500 1.5rem "Roboto";
+    }
+
+    .topBtns{
+        flex: 0.5;
+        margin-left: 1rem;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid rgb(160, 160, 160);
+        background-color: #fff;
+        font: 500 1rem "Roboto";
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    .topBtns:hover{
+        background-color: black;
+        color: #fff;
+
+    }
+}
