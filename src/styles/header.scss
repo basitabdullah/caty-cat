@@ -1,0 +1,56 @@
+@import "static";
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgb(185, 185, 185) ;
+  > a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: $color4;
+    font: 500 0.8rem "Roboto";
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  > div {
+    width: 1.3rem;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      padding: 1em;
+    }
+  }
+  h2 {
+    font-family: "Cedarville Cursive", cursive;
+
+    font: 800 1.1rem "Cedarville Cursive";
+  }
+
+.inputdiv{
+
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem  0.5rem;;
+    width: 10rem;
+    
+    input {
+        padding: 0.2rem;
+        border: none;
+        outline: none;
+      }
+      button {
+        padding-right: 5px;
+        border: none;
+        background-color: transparent;
+      }
+}
+
+}
+
