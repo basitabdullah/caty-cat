@@ -10,7 +10,6 @@ export const cartReducer = createReducer({
 },{
 addToCart : (state , action)=>{
     const item = action.payload
-    console.log(item);
     const itemExist = state.cartItems.find((i)=> i.id === item.id)
 
     if(itemExist){

@@ -4,7 +4,9 @@ import { BsCart } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { IoNotificationsOutline } from "react-icons/io5";
 import logo from "../assets/clipart1539887.png";
+import { useSelector } from "react-redux";
 const Header = () => {
+  const {cartItems} = useSelector(state=> state.cart)
   return (
     <>
       <nav>
@@ -27,7 +29,7 @@ const Header = () => {
         <div className="icons">
           <Link to={"/cart"}>
             <BsCart fontSize={"1.5rem"} color={"black"} />
-            <p className="cartNumber">0</p>
+            <p className="cartNumber">{cartItems.length}</p>
           </Link>
           <Link to={"/notifications"}>
             <IoNotificationsOutline fontSize={"1.5rem"} color={"black"} />

@@ -34,7 +34,7 @@ const Home = () => {
     type : "Shoes",
     rating : "4.2",
     price : "699",
-    id : 1,
+    id : 'ehjrgqrga',
   },
   {
     imgsrc : "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
@@ -42,7 +42,7 @@ const Home = () => {
     type : "Shoes",
     rating : "4.5",
     price : "896",
-    id : 2,
+    id : "arghargahg",
   },
   {
     imgsrc : "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
@@ -50,7 +50,7 @@ const Home = () => {
     type : "T-shirts",
     rating : "3.7",
     price : "299",
-    id : 3,
+    id : "arhguyeargyufg",
   },
   {
     imgsrc : "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1682160088_3882011.jpg?format=webp&w=480&dpr=1.3",
@@ -58,7 +58,7 @@ const Home = () => {
     type : "T-shirts",
     rating : "3.9",
     price : "999",
-    id : 4,
+    id : "agboaughuagh",
   },
   {
     imgsrc : "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1693836203_8667066.jpg?format=webp&w=480&dpr=1.3",
@@ -66,7 +66,7 @@ const Home = () => {
     type : "T-shirts",
     rating : "4.6",
     price : " 1499",
-    id : 5,
+    id : "ahguoaghtg",
   },
   {
     imgsrc : "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1957&q=80",
@@ -74,14 +74,13 @@ const Home = () => {
     type : "Bags",
     rating : "4.8",
     price : "2999",
-    id : 6,
+    id : "ahg0ouayr",
   },
 
 
  ]
 const dispatch = useDispatch()
  const addtocart =(options)=>{
-console.log(options);
 dispatch({type : "addToCart", payload : options})
 toast.success("Added To Cart")
 
@@ -99,7 +98,7 @@ toast.success("Added To Cart")
     <div className="products">
     {
         productsArr.map(i=>(
-          <ProductCard name={i.name} img={i.imgsrc} rating={i.rating} price={i.price} type={i.type} key={i.id } handler={addtocart}/>
+          <ProductCard name={i.name} img={i.imgsrc} rating={i.rating} price={i.price} type={i.type} id={i.id} key={i.id} handler={addtocart}/>
           
         ))
       }

@@ -1,7 +1,7 @@
 import React from "react";
 import {BsStarFill} from "react-icons/bs"
 import {CiShoppingCart} from "react-icons/ci"
-const ProductCard = ({name,img,rating,price,type,handler}) => {
+const ProductCard = ({name,img,rating,price,type,key,id,handler}) => {
   return (
     <div className="card">
       <div className="ImageContainer">
@@ -15,7 +15,7 @@ const ProductCard = ({name,img,rating,price,type,handler}) => {
         <div className="PriceDiv">
           <p className="price">${price}</p> <p className="price2">{price}</p>
         </div>
-          <button className="cartbtn" onClick={()=>handler({name,img,rating,price,type,quantity:1})}> <CiShoppingCart color="blue" fontSize={18}/>Add to cart</button>
+          <button className="cartbtn" onClick={()=>handler({name,img,rating,price,key,type,id,quantity:1})}> <CiShoppingCart color="blue" fontSize={18}/>Add to cart</button>
       </div>
     </div>
   );
