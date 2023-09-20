@@ -1,18 +1,19 @@
 import React from "react";
-
-const CartItemcard = ({name,img,price,qty}) => {
+import { RiDeleteBinLine } from 'react-icons/ri';
+const CartItemcard = ({name,img,price,qty,id,decrement,increment,deleteHandler  }) => {
   return (
     <div className="cartConatiner">
       <div className="imageConatiner">
-        <img src={img} alt="" />
+        <img src={img} alt="dwdw" />
       </div>
 
       <h1>{name}</h1>
       <p>${price}</p>
       <div className="btnDiv">
-        <button>-</button>
+        <button onClick={()=>decrement(id)}>-</button>
         <p>{qty}</p>
-        <button>+</button>
+        <button onClick={()=>increment(id)}>+</button>
+        <RiDeleteBinLine onClick={()=>deleteHandler(id)}/>
       </div>
     </div>
   );

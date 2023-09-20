@@ -23,7 +23,7 @@ h2{
   align-items: center;
   margin-left: 5rem;
   margin-top: 1rem;
-  width: 40rem;
+  width: 45rem;
   border-radius: 10px;
   box-shadow: -1px -1px 26px 6px rgba(0, 0, 0, 0.24);
   .imageConatiner {
@@ -49,15 +49,26 @@ h2{
     align-items: center;
     gap: 10px;
     > button {
-      padding: 5px 10px;
+      width: 1.6rem;
+      height: 1.6rem;
       background-color: black;
       color: white;
       border: none;
       cursor: pointer;
       border-radius: 5px;
     }
+    >svg{
+      margin-left: 1rem;
+      cursor: pointer;
+    }
   }
 }
 .cartItemsContainer {
   margin-top: 3rem;
+}
+
+.noItemsIn{
+  text-align: center;
+  font: 5rem "Cedarville Cursive"
+
 }
