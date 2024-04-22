@@ -16,7 +16,7 @@ const Header = () => {
       </nav>
 
       <div className="header">
-        <div>
+        <div className="logo">
           <img src={logo} alt="111" />
           <h2>edarville.com</h2>
         </div>

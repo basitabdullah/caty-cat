@@ -94,12 +94,13 @@ const Home = () => {
   return (
     <>
       <div className="homeComp">
-        <h1>Todays For You!</h1>
-        {buttonArray.map((i) => (
-          <button key={i.id} className="topBtns">
-            {i.name}
-          </button>
-        ))}
+        <div className="btnsContainer">
+          {buttonArray.map((i) => (
+            <button key={i.id} className="topBtns">
+              {i.name}
+            </button>
+          ))}
+        </div>
       </div>
       <div className="products">
         {productsArr.map((i) => (
