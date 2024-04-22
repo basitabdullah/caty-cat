@@ -27,12 +27,13 @@ const Header = () => {
         </div>
 
         <div className="icons">
-          <Link to={"/cart"}>
-            <BsCart fontSize={"1.5rem"} color={"black"} />
+          <Link to={"/cart"} >
+            <BsCart color={"black"} />
             <p className="cartNumber">{cartItems.length}</p>
           </Link>
-          <Link to={"/notifications"}>
-            <IoNotificationsOutline fontSize={"1.5rem"} color={"black"} />
+          <Link to={"/notifications"} >
+            <IoNotificationsOutline  color={"black"} />
+            <p className="notiNumber">4</p>
           </Link>
         </div>
       </div>
